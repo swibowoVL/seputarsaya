@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\begin{enumerate}
+\item App UI
+\begin{itemize}
+    \item Home page. Sebar dan Liat button
+    \item Liat Page, google map api, dan kembali button
+    \item Sebar Page, Kolom siapa saya. Tombol, mulai stop kembali
+\end{itemize}
+
+\item Process login id
+\begin{itemize}
+    \item User ask web service to acquire id
+    \item Web send back JID and password
+    \item App send data to bot@server
+    \item App conect to bot@srver ready to render
+    \item App relase JID
+\end{itemize}
+
+\item Bot logic
+\begin{itemize}
+    \item Bot receive new data then route them to corresponding JID
+    \item Bot get presence and get ready message. Bot send last known data
+    \item Bot keep last known and every 10 minute check outdated JID
+\end{itemize}
+
+\item Client logic
+\begin{itemize}
+    \item App send data geohash, pos, message
+    \item Only send if there is changes. Every 10 minutes send data even though no change
+    \item App connect and send rough position. Ready to receive update
+\end{itemize}
+
+\end{enumerate}
+\end{document}

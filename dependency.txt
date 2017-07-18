@@ -1,0 +1,4 @@
+nspython (1.15.0)
+dnspython3 (1.15.0)
+setuptools (28.8.0)
+sleekxmpp (1.3.2)
